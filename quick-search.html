@@ -1,12 +1,17 @@
 <h2>Search:</h2>
+
 <div id="searchSelect">
-  <input checked="checked" id="ebsco" name="searchType" type="radio" value="genTopic" /> <label for="ebsco">General Topic articles</label> 
-  <input id="opac" name="searchType" type="radio" value="opac" /> <label for="opac">IIT Books</label> 
-  <input id="website" name="searchType" type="radio" value="website" /> <label for="website">This website</label>
+  <input checked="checked" id="ebsco" name="searchType" type="radio" value="genTopic" /> 
+  <label for="ebsco">General Topic articles</label> 
+  <input id="opac" name="searchType" type="radio" value="opac" /> 
+  <label for="opac">IIT Books</label> 
+  <input id="website" name="searchType" type="radio" value="website" /> 
+  <label for="website">This website</label>
 </div>
 <div id="searchEbsco">
-	<h3>General Topic Search</h3>
+	<h3>Search for General Topic Articles</h3>
 	<p>Have a general research topic? Enter it below to search the following databases: <em>Academic Search Complete</em>, <em>Business Source Premier</em>, and <em>Funk &amp; Wagnalls New World Encyclopedia</em>.</p>
+  
 	<!-- EBSCOhost Custom Search Box Begins --><script type="text/javascript" src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js"></script>
 	<form action="" id="ebscohostCustomSearchBox" method="post" onsubmit="return ebscoHostSearchGo(this);"><input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" /><input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://ezproxy.gl.iit.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;site=ehost-live&amp;scope=site&amp;type=1&amp;db=a9h&amp;db=buh&amp;db=funk&amp;mode=and&amp;lang=en&amp;authtype=ip,url" /><input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" /><input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+OR+" /> <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
 		<div class="search-form"><input id="ebscohostsearchtext" name="ebscohostsearchtext" size="30" type="text" />&nbsp;&nbsp;<input class="iit-button" type="submit" value="Search" /></div>
@@ -15,7 +20,7 @@
 </div>
 
 <div id="searchOpac">
-	<h3>Search IIT Books</h3>
+	<h3>Search for Books at IIT</h3>
 	<p>Use the IIT Library Catalog to search for books, e-books, and print journals held by IIT libraries. Create an&nbsp;<a href="https://vufind.carli.illinois.edu/vf-iit/MyResearch/Account?followup=%2Fvf-iit%2FMyResearch%2FHome">online account</a> to see items checked out from IIT and I-Share libraries.</p>
 	<form action="https://vufind.carli.illinois.edu/vf-iit/Search/Home" class="search-form" method="get" name="bookSearch" target="_blank">
 		<div class="div-col">
@@ -23,9 +28,9 @@
 			<div class="col2"><select id="searchtype" name="type" size="1"><option value="all">Keyword</option><option value="title">Title</option><option value="author">Author</option><option value="subject">Subject</option><option value="isn">ISBN/ISSN</option></select><input name="start_over" type="hidden" value="1" /><input class="iit-button" name="submit" type="submit" value="Search" /></div>
 		</div>
 	</form>
-</div>  
-<div id="searchWebsite">
-		<h3>Search This Site</h3>
-		<form accept-charset="UTF-8" action="/search" id="views-exposed-form-site-search-complex--search-page" method="get"><input class="form-text" id="edit-keys" maxlength="128" name="keys" size="50" title="Enter the terms you wish to search for." type="text" value="" /> <input class="form-submit" id="edit-submit-site-search-complex-" name="" type="submit" value="Search" /></form>
 </div>
 
+<div id="searchWebsite">
+	<h3>Search This Site</h3>
+	<form accept-charset="UTF-8" action="/search" id="views-exposed-form-site-search-complex--search-page" method="get"><input class="form-text" id="edit-keys" maxlength="128" name="keys" size="40" title="Enter the terms you wish to search for." type="text" value="" /> <input class="form-submit" id="edit-submit-site-search-complex-" name="" type="submit" value="Search" />&nbsp;</form>
+</div>
